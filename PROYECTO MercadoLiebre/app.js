@@ -6,7 +6,7 @@ const dotenv = require('dotenv').config();
 app.use( express.static('public') );
 
 app.listen(process.env.PORT, () => {
-    console.log('Servidor escuchando en el puerto ' + process.env.PORT + ' - http://localhost:3000');
+    console.log('Servidor escuchando en el puerto ' + process.env.PORT + ' - http://localhost:' + process.env.PORT);
 })
 
 app.get('/', (req, res) => {
