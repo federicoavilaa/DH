@@ -16,14 +16,11 @@ body header {
     height: auto;
 }
 
-
-
 .logoContainer {
     display: flex;
     align-items: center;
     margin: 0;
     width: 100vw;
-
 }
 
 .logoContainer .logo {
@@ -58,9 +55,6 @@ body header {
     font-weight: 900;
 }
 
-
-
-
 .searchContainer button .fa-solid {
     font-size: 10px;
 }
@@ -71,8 +65,6 @@ body header {
     padding: 0 35px;
     color: #666;
     width: 100%;
-
-
 }
 
 .secciones b {
@@ -80,10 +72,7 @@ body header {
 }
 
 
-
-/* LOGO BUSQUEDA -------------- */
-
-/* DESCRIPCION ARTICULOS */
+/* texto articulos */
 
 .articles-container .descripcion {
     font-size: 12px;
@@ -93,21 +82,12 @@ body header {
     display: none;
 }
 
-
-
-
-
-
 .cuerpoText {
     font-size: 12px;
 }
 
 
-/* NAVEGACION HEADER ----------------*/
-
-
-
-
+/* navbar */
 
 .container-navbar {
     display: none;
@@ -121,34 +101,27 @@ body header {
     color: black;
 }
 
-
 .burger-menu {
     height: 9vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
 }
 
-
 .burger-menu .fas {
-
     background-color: #1259c3;
     padding: 10px;
     color: white;
     border-radius: 5px;
 }
 
-/* NAVEGACION ------------------------ */
-
+/* footer */
 
 .copyright {
     text-align: left;
     font-size: 12px;
 }
-
 
 .textHeader {
     text-align: center;
@@ -165,7 +138,6 @@ body header {
     font-size: 12px;
 }
 
-
 footer {
     text-align: center;
     margin-top: 30px;
@@ -181,7 +153,6 @@ footer ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
-
 }
 
 footer .fa-solid {
@@ -192,8 +163,6 @@ footer .fa-solid {
 
 footer .fa-solid:hover {
     color: #03264C;
-
-    ;
 }
 
 input:invalid {
@@ -201,7 +170,7 @@ input:invalid {
     border-color: red;
   }
   
-  input:invalid:after {
+input:invalid:after {
     content: "El formato no es válido.";
     color: red;
     display: block;
@@ -210,12 +179,11 @@ input:invalid {
   }
   
 
-/* PRECIO Y DESCUENTOS */
+/* precios y descuentos */
 
 section .detalle {
     display: flex;
     align-items: center;
-
 }
 
 .detalle .precios {
@@ -231,11 +199,8 @@ section .detalle {
     padding: 0 0 0 10px;
 }
 
+/* body */
 
-/* --------------------------- */
-
-
-/* ARTICULOS */
 body main {
     width: 100vw;
     display: flex;
@@ -244,8 +209,6 @@ body main {
     justify-content: center;
     padding: 40px 0 0 0;
 }
-
-
 
 body main .articles-container {
     display: flex;
@@ -256,10 +219,6 @@ body main .articles-container {
     flex-wrap: wrap;
     margin: 35px 0;
 }
-
-
-
-
 
 .content-article {
     border-top: solid 1px #ebebeb;
@@ -273,9 +232,6 @@ body main .articles-container {
     display: flex;
     transition: 70ms;
 }
-
-
-
 
 .content-article i {
     display: block;
@@ -307,187 +263,151 @@ body main .articles-container {
     box-shadow: 2px 2px 20px #393939;
 }
 
-
-
-/* TABLET */
+/* tablet */
 
 @media (min-width: 361px) {
 
-    /* ARTICULOS */
+/* articulos */
 
-    body main .articles-container {
-
-        flex-direction: row;
-
-    }
-
-
-
-
-    .content-article {
-        width: 44%;
-    }
-
-    /* ICONO DE ENVIO ARTICULOS */
-
-    .content-article i {
-        font-size: 12px;
-        width: 24px;
-        height: 24px;
-        bottom: 24%;
-        right: 2%;
-    }
-
-
-    /* PRECIOS - DESCUENTOS Y DESCRIPCION */
-
-    .detalle .precios {
-        font-size: 0.75rem;
-        width: 40%;
-    }
-
-    .detalle .descuentos {
-        font-size: 0.75rem;
-        text-align: center;
-        padding: 0 0 0 0;
-        align-self: flex-start;
-        width: 60%;
-    }
-
-    .articles-container .descripcion {
-        font-size: 0.688rem;
-    }
-
-
-
-    .secciones {
-        padding: 0 4%;
-    }
-
-    .articles-container .descripcion {
-        display: block;
-        opacity: 0;
-    }
-
-    .articles-container .descripcion:hover {
-        opacity: 0.9;
-    }
-
+body main .articles-container {
+    flex-direction: row;
 }
 
+.content-article {
+    width: 44%;
+}
 
+/* icono envio */
 
+.content-article i {
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
+    bottom: 24%;
+    right: 2%;
+}
+
+/* descripcion */
+
+.detalle .precios {
+    font-size: 0.75rem;
+    width: 40%;
+}
+
+.detalle .descuentos {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0 0 0 0;
+    align-self: flex-start;
+    width: 60%;
+}
+
+.articles-container .descripcion {
+    font-size: 0.688rem;
+}
+
+.secciones {
+    padding: 0 4%;
+}
+
+.articles-container .descripcion {
+    display: block;
+    opacity: 0;
+}
+
+.articles-container .descripcion:hover {
+    opacity: 0.9;
+}
+}
 
 
 
 @media (min-width: 505px) {
 
+/*navbar*/
 
+.headerTopBar {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
 
-    /* HEADER-NAV Y TOP BAR - BOTTOM BAR + CONTAINER*/
+.container-navbar {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 10px 15px 10px;
+    width: 100%;
+}
 
-    .headerTopBar {
-        display: flex;
-        align-items: center;
-        width: 100vw;
-    }
+.navbar-top,
+.navbar-bottom {
+    display: flex;
+    align-items: flex-end;
+}
 
+.navbar-top li i,
+.navbar-bottom li i {
+    margin: 0 5px;
+}
 
-
-
-    .container-navbar {
-        height: 20vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 0 10px 15px 10px;
-        width: 100%;
-    }
-
-    .navbar-top,
-    .navbar-bottom {
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .navbar-top li i,
-    .navbar-bottom li i {
-        margin: 0 5px;
-    }
-
-    .navbar-top li,
-    .navbar-bottom li {
-        margin: 0 0 0 15px;
-        font-size: 10px;
-    }
-
-
-    .container-navbar {
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 20px 0 0 0;
-    }
-
-    /* MENU HAMBURGUESA OCULTO */
-
-
-    .burger-menu {
-        display: none;
-    }
-
-
-    /* TEXT HEADER RIGHT */
-
-
-    .textHeader {
-        width: 35%;
-    }
-
-
-    /* LOGO HEADER MERCADO-LIEBRE */
-
-    .logoContainer .logo {
-        width: 50%;
-        margin: 10px;
-    }
-
-
-    .logoContainer {
-        width: 70%;
-    }
-
-
-    /* SEARCH NAV BAR */
-
-
-    .logoContainer .searchContainer {
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    .searchContainer input {
-        height: 30px;
-        width: 85%;
-        border: none;
-    }
-
-    .searchContainer button {
-        position: relative;
-        width: 10%;
-        height: 30px;
-        background-color: white;
-    }
-
-
-
+.navbar-top li,
+.navbar-bottom li {
+    margin: 0 0 0 15px;
+    font-size: 10px;
 }
 
 
+.container-navbar {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
 
-/* TABLET GRANDE*/
+.burger-menu {
+    display: none;
+}
+
+.textHeader {
+    width: 35%;
+}
+
+
+.logoContainer .logo {
+    width: 50%;
+    margin: 10px;
+}
+
+.logoContainer {
+    width: 70%;
+}
+
+
+.logoContainer .searchContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.searchContainer input {
+    height: 30px;
+    width: 85%;
+    border: none;
+}
+
+.searchContainer button {
+    position: relative;
+    width: 10%;
+    height: 30px;
+    background-color: white;
+}
+}
+
+
+/* tablet mas grande*/
 
 @media (min-width: 400px) {
     .content-article i {
@@ -500,11 +420,9 @@ body main .articles-container {
 
 
 
-/* TABLET GRANDE*/
+/*tablet mas grande*/
 
 @media (min-width: 523px) {
-
-
     .articles-container .descripcion {
         font-size: 0.87rem;
     }
@@ -539,10 +457,7 @@ body main .articles-container {
     }
 }
 
-
-/*DESKTOP*/
-
-
+/*laptop*/
 
 @media (min-width: 769px) {
 
@@ -575,20 +490,17 @@ body main .articles-container {
         font-size: 12px;
     }
 
-    /* REGISTRO ----------------------------->>>> */
+    /* register */
 
     .main-registro-container .card-registro {
         width: 40vw;
     }
 
-
     .wrapper-input .input-radio {
         display: flex;
         flex-direction: row;
         align-items: center;
-
     }
-
 
     .wrapper-input .input-radio label {
         margin: 0;
@@ -598,20 +510,14 @@ body main .articles-container {
     .wrapper-input .input-radio input {
         margin: 0 20px 0 0;
         width: auto;
-
     }
-
-
 
     .main-login-container .card-login {
         width: 40vw;
     }
 
-
-
     .footer-container {
         display: flex;
-
     }
 
     footer {
@@ -640,20 +546,16 @@ body main .articles-container {
     .detalle .descuentos {
         font-size: 0.75rem;
     }
-
 }
 
 
 @media (min-width: 1084px) {
-
     .content-article i {
         bottom: 18%;
     }
-
     .textHeader .fa-solid {
         font-size: 17px;
     }
-
     .secciones {
         padding: 0 3%;
     }
@@ -662,41 +564,31 @@ body main .articles-container {
 
 
 @media (min-width: 1300px) {
-
-
     .secciones {
         padding: 0 3.5%;
     }
-
     .content-article i {
         bottom: 15%;
     }
-
     .headerTopBar .logoContainer img {
         width: 400px;
     }
-
     .textHeader i span {
         font-size: 1rem;
     }
-
     .articles-container .descripcion {
         font-size: 1rem;
         padding: 10px 0 0 0;
     }
-
     .detalle .precios {
         font-size: 1.125rem;
     }
-
     .detalle .descuentos {
         font-size: 1rem;
     }
 }
 
-
-
-/* LOGIN */
+/* log in */
 
 
 .main-login-container {
@@ -749,7 +641,6 @@ body main .articles-container {
     padding: 10px;
 }
 
-
 .form-container button {
     height: 38px;
     background-color: #1259c3;
@@ -768,12 +659,9 @@ body main .articles-container {
 
 #login-body {
     background-color: white;
-
 }
 
-
-
-/* REGISTRO ----------------------------->>>> */
+/* register */
 
 .card-registro {
     height: 100%;
@@ -786,7 +674,6 @@ body main .articles-container {
     border-radius: 15px;
     box-shadow: 2px 2px 50px #414141;
     background-color: #ebebeb;
-
 }
 
 .form-container-register {
@@ -803,7 +690,6 @@ body main .articles-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -825,14 +711,10 @@ body main .articles-container {
     padding: 0 0 0 5px;
 }
 
-
 .wrapper-input input::placeholder {
     padding: 0 5px;
     font-style: italic;
 }
-
-
-
 
 .input-radio {
     display: flex;
@@ -844,8 +726,6 @@ body main .articles-container {
     margin: 10px 0;
     width: 20%;
 }
-
-
 
 .wrapper-checkbox {
     display: flex;
